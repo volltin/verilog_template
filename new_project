@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -n "$1" ]; then
+    cp -R .template "$1"
+    echo "New project $1 created."
+else
+    echo "USAGE: $0 <new project name>"
+fi
